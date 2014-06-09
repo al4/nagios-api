@@ -1,0 +1,12 @@
+Source: python-nagios-api
+Section: python
+Priority: extra
+Maintainer: Gumtree SiteOps <ops@gumtree.com>
+Build-Depends: debhelper (>= 9), python, dh-virtualenv, gcc, python-dev
+Standards-Version: 3.9.5
+
+Package: python-nagios-api
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: Nagios API
+
