@@ -42,7 +42,7 @@ NAGIOS = None
 NLOG = []
 NLOGLINES = 0
 ALLOW_ORIGIN = None
-PID_FILE = "/var/run/nagios-api.pid"
+PID_FILE = "/var/run/nagios-api/nagios-api.pid"
 
 
 def _send_json(req, success, content):
