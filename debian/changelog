@@ -1,5 +1,6 @@
-python-nagios-api (0.0~git5de5b50aea) UNRELEASED; urgency=low
+python-nagios-api (1.2.2-gumtree1) gt-app; urgency=low
 
-  * Initial release. (Closes: #XXXXXX)
+  * Move PID file to subdirectory
+  * Debian packaging of upstream release
 
  -- Alex Forbes <alforbes@gumtree.com>  Mon, 09 Jun 2014 16:06:05 +0100
