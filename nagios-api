@@ -837,7 +837,7 @@ def read_log(logfile):
         else:
             NLOGLINES += 1
             NLOG.append(line.strip())
-            NLOG = NLOG[-1000:]  # Keep the most recent 1k lines.
+            NLOG = NLOG[-10000:]  # Keep the most recent 10k lines.
     f.close()  # Useless?
 
 def write_pid():
