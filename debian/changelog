@@ -1,3 +1,21 @@
+python-nagios-api (1.2.2-gumtree2) UNRELEASED; urgency=medium
+
+  [ bhxk ]
+  * Update nagios-api-initd
+
+  [ Cyrill Troxler ]
+  * Implemented hostgroup downtime
+  * Update README to include schedule_hostgroup_downtime
+
+  [ Alex Forbes ]
+  * Move PID file to subdirectory
+  * Add debian changelog
+  * Increase log retention to 10k
+  * Add --no-test to dh_virtualenv args
+  * Clean out .pyc files before build
+
+ -- Alex Forbes <alforbes@gumtree.com>  Tue, 11 Nov 2014 01:09:44 +0000
+
 python-nagios-api (1.2.2-gumtree1) gt-app; urgency=low
 
   * Move PID file to subdirectory
