@@ -1,6 +1,10 @@
 nagios-api
 ==========
 
+ABOUT THIS FORK
+---------------
+Adds debian packaging, and increases the log retention so it goes further back in history. It still rolls over at midnight though.
+
 
 NAME
 ----

@@ -43,7 +43,7 @@ NAGIOS = None
 NLOG = []
 NLOGLINES = 0
 ALLOW_ORIGIN = None
-PID_FILE = "/var/run/nagios-api.pid"
+PID_FILE = "/var/run/nagios-api/nagios-api.pid"
 
 
 def _send_json(req, success, content):
@@ -929,7 +929,7 @@ def read_log(logfile):
         else:
             NLOGLINES += 1
             NLOG.append(line.strip())
-            NLOG = NLOG[-1000:]  # Keep the most recent 1k lines.
+            NLOG = NLOG[-10000:]  # Keep the most recent 10k lines.
     f.close()  # Useless?
 
 def write_pid():
