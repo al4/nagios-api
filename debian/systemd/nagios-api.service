@@ -1,0 +1,18 @@
+# Systemd unit file for nagios-api
+
+[Unit]
+Description=nagios-api
+After=network.target
+ConditionPathExists=/usr/share/python/python-nagios-api/bin/nagios-api
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+ExecStart=/usr/share/python/python-nagios-api/bin/nagios-api \
+-p 8080 -c /var/lib/nagios3/rw/nagios.cmd \
+-s /var/cache/nagios3/status.dat \
+-l /var/log/nagios3/nagios.log
+
+[Install]
+WantedBy=multi-user.target
